@@ -22,15 +22,37 @@
 
   </head>
   <body>
+    <div id="page1viz"> 
+      <!-- menu bar -->
+      <div id="viz-menu">
+        <div id="division-select">
+          Division
+          <select></select>
+        </div>
+        <div id="crimes-select">
+          Crimes
+          <select></select>
+        </div>
+        <div id="period-select">
+          Period
+          <select>
+            <option value="lastyr">Last Year</option>
+            <option value="daybyhr">Day - 24 Hour</option>
+          </select>
+        </div>
+        <div>
+          <button id="click-home">Homepage</button>
+          <input id="input-field" type="text">
+      </div>
+      </div>
+      <!-- end menu bar -->
+      <!-- time chart -->
 
-    <!-- map div -->
-    <div id="map"></div>
+      <!-- map div -->
+      <div id="map"></div>
 
     <!-- JavaScript file -->
-    <!-- <script type="text/javascript" src="static/js/logic.js"></script> -->
-    <!-- <script type="text/javascript" src="static/js/logic2.js"></script> -->
-    <!-- <script type="text/javascript" src="static/js/logic3.js"></script> -->
     <script type="text/javascript" src="../static/js/logicMaps2.js"></script>
-
+  </div>
   </body>
 </html>
