@@ -23,3 +23,20 @@ consumer.query()
 // }).catch(function(error) {
 //     console.error('Error fetching Crime data:', error);
 // });
+
+// CORS script from Socrata webpage
+$.ajax({
+	url: "https://data.lacity.org/resource/2nrs-mtv8.json",
+	method: "GET",
+	dataType: "json",
+	data: {
+	  "status": "CLOSED",
+	  "$$app_token": cKFNajfV5dXE0VNv6LOpnAZqR
+	},
+	success: function( data, status, jqxhr ){
+	  console.log( "Request received:", data );
+	},
+	error: function( jqxhr, status, error ){
+	  console.log( "Something went wrong!" );
+	}
+  });

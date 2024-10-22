@@ -9,7 +9,7 @@ def home():
 
 @app.route('/data')
 def get_data():    
-    response = requests.get('https://your-soda-domain/resource/your-dataset-id.json')
+    response = requests.get('https://data.lacity.org/resource/2nrs-mtv8.json')
     
     if response.status_code == 200:
         data = response.json()

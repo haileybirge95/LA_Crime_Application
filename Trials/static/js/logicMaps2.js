@@ -20,8 +20,8 @@ d3.json(linkNeighborhood).then(function(data) {
     dropdownMenu.append("option")
   let nhoods = d3.map(data, (d) => data.features.properties.name);
     console.log(nhoods);
+  });
 });
-
 
 
 d3.json(linkLAPDV).then(function(data) {
