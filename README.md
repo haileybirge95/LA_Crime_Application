@@ -1,10 +1,13 @@
 # Project3_LA_Crime
 UNCC Data Science Bootcamp - Module 16 Project 3
+
 This project presents an analysis of crime statistics over the last year in Los Angeles by LAPD area station.
 
 The purpose of this project is to provide users with relevant knowledge that can inform decisions such as relocation, travel, school selection and more.
+
 It provides the user with visualizations related to victim demographics that are easy to absorb and presented in a clear format.
 An additional aspect of the application is the interactive table which provides information about each area based on crime rate.
+
 To use the application, simply select the button with the visualization you would like to explore from the homepage. This will open a new tab for easy navigation between pages.
 INSERT ADDITIONAL INSTRUCTION FOR THE TABLE HERE.
 The data for this project was taken from the Los Angeles Open Data resource (https://data.lacity.org/). The specific dataset used was "Crime Data from 2020 to Present".
