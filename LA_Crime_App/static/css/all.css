@@ -1,0 +1,102 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #5615ac;
+}
+
+h2 {
+    color: #666;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0; /* Add some spacing between list items */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: blue; /* Link color */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* New CSS for the header image */
+#header-image {
+    width: 100%; /* Keep the width at 100% of the container */
+    height: 40vh; /* Set height to 40% of the viewport height */
+    display: block; /* Ensure it behaves like a block element */
+    margin: 0 auto 20px; /* Center the image and add space below it */
+}
+
+/* New CSS for the pie charts container */
+.pie-charts-container {
+    display: flex;                /* Use Flexbox for layout */
+    flex-direction: row;          /* Arrange charts horizontally */
+    align-items: flex-start;      /* Align items to the top */
+    justify-content: flex-start;   /* Align items to the left */
+    margin-left: 5px;            /* Optional: Add some left margin */
+    width: 100%;                  /* Set the container to full width */
+    max-width: 1000px;           /* Optional: Set a max width for the container */
+}
+
+.pie-chart {
+    margin: 20px 120px;          /* Add vertical space above and horizontal space between charts */
+    margin-bottom: 100px;         /* Add space below the pie charts */
+    width: 300px;                 /* Set a fixed width for the charts */
+    height: 300px;                /* Set a fixed height for the charts */
+}
+
+
+/* Title styles for the pie charts */
+.pie-chart-title {
+    font-size: 24px; /* Title font size */
+    font-weight: bold; /* Bold title */
+    text-align: center; /* Center the title */
+}
+
+/* Styles for the pie chart text */
+.pie-chart-text {
+    font-size: 16px; /* Font size for percentages */
+    font-weight: bold; /* Make percentages bold */
+}
+#bar-chart {
+    width: 80%; /* Set the width of the chart */
+    height: 500px; /* Set the height of the chart */
+    margin: auto; /* Center the chart */
+    border: 2px solid #ccc; /* Add a border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.button {
+    display: inline-block; /* Make the links behave like buttons */
+    padding: 10px 20px; /* Add padding for a button-like appearance */
+    margin: 5px; /* Space between buttons */
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Text color */
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Make the text bold */
+}
+
+.blue {
+    background-color: blue; /* Blue background for the first button */
+}
+
+.green {
+    background-color: green; /* Green background for the second button */
+}

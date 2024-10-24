@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics Overview</title> <!-- Title for the page -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/all.css') }}">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="{{ url_for('static', filename='js/stats.js') }}"></script>
+    <title>Statistics</title>
+
+    <style>
+        /* Optional: Add some styling for better presentation */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #bar-chart {
+            width: 100%;
+            height: 500px;
+        }
+        h1 {
+            text-align: center; /* Center the heading */
+        }
+    </style>
+</head>
+<body>
+    <h1>Statistics Overview</h1>
+        <!-- Add the bar chart div here -->
+        <div id="bar-chart"></div> <!-- Stacked Bar Chart -->
+    <div id="content"></div>  <!-- Placeholder for dynamic content -->
+    
+    <div class="pie-charts-container">
+        <div class="pie-chart" id="age-pie-chart"></div> <!-- Age Group Pie Chart -->
+        <div class="pie-chart" id="sex-pie-chart"></div> <!-- Victims by Sex Pie Chart -->
+        <div class="pie-chart" id="race-pie-chart"></div> <!-- Victims by Race Pie Chart -->
+    </div>
+</body>
+</html>

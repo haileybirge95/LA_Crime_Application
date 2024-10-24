@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"> 
+<head> 
+    <title>Map View</title> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/css/map.css">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <!-- Leaflet JavaScript code -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="">
+    </script>
+
+    <!-- Leaflet plugin to add Markers to Multiple Polygon Centers -->
+    <script src="https://unpkg.com/@turf/turf/turf.min.js"></script>
+
+    <!-- Leaflet plugin to find a point inside a polygon -->
+    <script src="https://rawgit.com/hayeswise/Leaflet.PointInPolygon/master/wise-leaflet-pip.js"></script>
+
+    <!-- D3 library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+      body {
+          background-color: gray; /* Set the background color to gray */
+      }
+  </style>
+</head>
+
+<body>
+  <!-- Center and add margin above the image -->
+  <div style="text-align: center; margin-top: 40px;"> <!-- Adjust margin-top as needed -->
+      <img src="{{ url_for('static', filename='images/lapd.png') }}" 
+           alt="Description of Image" 
+           style="width: 50%; height: auto;"> <!-- Set width to 50% of the viewport -->
+  </div>
+
+  <div id="map" style="width: 100%; height: 500px;"></div> <!-- Ensure the map has dimensions -->
+
+  <script src="{{ url_for('static', filename='js/map.js') }}"></script>
+</body> 
+</html>
