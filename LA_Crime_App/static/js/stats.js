@@ -12,7 +12,7 @@ function loadSexChart() {
     d3.select("#sex-pie-chart").html(""); // Clear the pie chart div
 
     // Fetch the JSON data from the new endpoint
-    fetch('/data')
+    fetch('/static/data/data.json')
         .then(response => {
             if (!response.ok) {
                 return response.text().then(text => {
@@ -83,7 +83,7 @@ function loadAgeGroupChart() {
     d3.select("#age-pie-chart").html(""); // Clear the pie chart div
 
     // Fetch the JSON data from the new endpoint
-    fetch('/data')
+    fetch('/static/data/data.json')
         .then(response => {
             if (!response.ok) {
                 return response.text().then(text => {
@@ -176,7 +176,7 @@ function loadRaceChart() {
     d3.select("#race-pie-chart").html(""); // Clear the pie chart div
 
     // Fetch the JSON data from the new endpoint
-    fetch('/data')
+    fetch('/static/data/data.json')
         .then(response => {
             if (!response.ok) {
                 return response.text().then(text => {
@@ -272,7 +272,7 @@ function loadRaceChart() {
 loadRaceChart();
 
 // Fetch the JSON data
-fetch('/data')
+fetch('/static/data/data.json')
 .then(response => {
     if (!response.ok) {
         return response.text().then(text => {
