@@ -11,7 +11,7 @@ function loadHomePage() {
 
     // Check if content has already been added
     if (contentDiv.select("h1").empty()) {
-        // Create a heading
+        // Heading
         contentDiv.append("h1").text("L.A. Crime: Types, Demographics, and Annual Overview");
 
         // Paragraph

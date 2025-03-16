@@ -57,16 +57,16 @@ function loadSexChart() {
                     font: {
                         size: 20
                     },
-                    x: 0.5, // Center the title
-                    xanchor: 'center' // Anchor the title to the center
+                    x: 0.5,
+                    xanchor: 'center'
                 },
                 height: 400,
                 width: 600,
                 margin: {
-                    l: 20, // Left margin
-                    r: 20, // Right margin
-                    t: 60, // Top margin for the title
-                    b: 10 // Bottom margin
+                    l: 20,
+                    r: 20,
+                    t: 60,
+                    b: 10
                 },
                 paper_bgcolor: 'rgba(0,0,0,0)',
             };
@@ -265,7 +265,6 @@ function loadRaceChart() {
         .catch(error => {
             // Handle the error silently without displaying it on the page
             console.log('An error occurred while fetching the data.');
-            // You can also clear the chart or show a user-friendly message if needed
         });
 }
 // Call the function to load the race chart
@@ -367,10 +366,9 @@ function createStackedBarChart(frequency) {
             title: {
                 text: 'Months',
                 font: {
-                    size: 20, // Font size for the x-axis label
+                    size: 20,
                     family: 'Arial, sans-serif',
                     color: 'black',
-                    // 'weight' is not a valid property here; use 'bold' in the CSS style instead
                 }
             },
             showgrid: true,
@@ -380,7 +378,7 @@ function createStackedBarChart(frequency) {
             title: {
                 text: 'Frequency (in thousands)',
                 font: {
-                    size: 20, // Font size for the y-axis label
+                    size: 20,
                     family: 'Arial, sans-serif',
                     color: 'black',
                 }
@@ -388,7 +386,7 @@ function createStackedBarChart(frequency) {
             showgrid: true,
             zeroline: false
         },
-        plot_bgcolor: 'rgba(240, 240, 240, 0.95)', // Light gray background
+        plot_bgcolor: 'rgba(240, 240, 240, 0.95)',
         margin: {
             l: 40,
             r: 40,

@@ -28,14 +28,14 @@ ul li {
 
 a {
     text-decoration: none; 
-    color: blue; /* Link color */
+    color: blue;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* New CSS for the header image */
+/* CSS for the header image */
 #header-image {
     width: 100%;
     height: 40vh;
@@ -43,7 +43,7 @@ a:hover {
     margin: 0 auto 20px;
 }
 
-/* New CSS for the pie charts container */
+/* CSS for the pie charts container */
 .pie-charts-container {
     display: flex;               
     flex-direction: row;          
