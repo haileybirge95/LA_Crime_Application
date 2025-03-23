@@ -4,9 +4,15 @@ This application presents an analysis of crime statistics over the last year in 
 
 The purpose is to provide users with relevant knowledge that can inform decisions such as relocation, travel, school selection and more.
 
-The user has the option to navigate from the homepage to a dashboard of statistical visualizations or a reference map displaying the LAPD area station jurisdictions.
-
 The visualizations are powered by data from the Los Angeles Open Data resource (https://data.lacity.org/). The specific dataset utilized was "Crime Data from 2020 to Present".
+
+Before using the data, the original dataset needed to be parsed and cleaned. It provided crimes by date (month/day/year format), area name, crime code and description. In order to create the visualizations based on the demographics we wanted to analyze, the data was grouped by area name, crime code, age, sex, and race. The month was extracted from the date column. Once prepared, the data was converted to a JSON file, and the visualizations were rendered in the flask app by fetching the data from the file.
+
+The user has the option to navigate from the homepage to a dashboard of statistical visualizations or a reference map displaying the LAPD area station jurisdictions.
+![Alt text](https://i.imgur.com/6dWvIgX.png)
+
+The statistics overview page provides the user with the frequency of crimes for each month of the year, by the type of crime: violent, property, stolen vehicle, drug/sex crimes, or other. Below this grouped bar graph is a series of pie charts showing the distribution of victims for the year by age, sex, and race.
+![Alt text](https://i.imgur.com/pGRhwo3.png)
 
 Ethical considerations were incorporated. There was no identifying information on individuals included in this analysis, all remain anonymous.
 An effort was made to include all ages, sexes, and races present in the dataset. Counts and percentages are based solely on what is present in the data and not altered in any way.
