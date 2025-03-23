@@ -10,6 +10,7 @@ The purpose is to provide users with relevant knowledge that can inform decision
 
 The visualizations are powered by data from the Los Angeles Open Data resource (https://data.lacity.org/). The specific dataset utilized was "Crime Data from 2020 to Present".
 
+### Pre-Processing
 Before using the data, the original dataset needed to be parsed and cleaned. It provided crimes by date (month/day/year format), area name, crime code and description. In order to create the visualizations based on the demographics we wanted to analyze, the data was grouped by area name, crime code, age, sex, and race. The month was extracted from the date column. Once prepared, the data was converted to a JSON file, and the visualizations were rendered in the flask app by fetching the data from the file.
 
 The user has the option to navigate from the homepage to a dashboard of statistical visualizations or a reference map displaying the LAPD area station jurisdictions.
