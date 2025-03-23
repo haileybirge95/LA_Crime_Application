@@ -1,7 +1,10 @@
 # Los Angeles Crime Application
 
 This application presents an analysis of crime statistics over the last year in Los Angeles by LAPD area station.
-![Alt text](https://i.imgur.com/KMk46ep.png)
+
+<p align="center">
+  <img src="https://imgur.com/a/xtQ05LW" alt="Description of image" />
+</p>
 
 The purpose is to provide users with relevant knowledge that can inform decisions such as relocation, travel, school selection and more.
 
