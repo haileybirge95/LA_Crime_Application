@@ -17,6 +17,7 @@ The user has the option to navigate from the homepage to a dashboard of statisti
 ![Alt text](https://i.imgur.com/6dWvIgX.png)
 
 The statistics overview page provides the user with the frequency of crimes for each month of the year, by the type of crime: violent, property, stolen vehicle, drug/sex crimes, or other. Below this grouped bar graph is a series of pie charts showing the distribution of victims for the year by age, sex, and race.
+
 ![Alt text](https://i.imgur.com/pGRhwo3.png)
 
 Ethical considerations were incorporated. There was no identifying information on individuals included in this analysis, all remain anonymous.
